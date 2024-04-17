@@ -14,7 +14,7 @@ body {
   background-image: url(hero.png);
   background-repeat: repeat;
   color: aliceblue;
-  /* min-height: 5000px; */
+  min-height: 5000px;
 }
 
 /* Navbar */
@@ -90,15 +90,15 @@ body {
   position: relative;
 }
 
-/* .hero::after {
+.hero::after {
   content: "";
   display: block;
   position: absolute;
   width: 100%;
   height: 10%;
-  bottom: 0;
+  bottom: 0rem;
   background: #3c2a21;
-} */
+}
 
 .hero .content {
   padding: 1rem 7%;
@@ -145,8 +145,21 @@ body {
 .about,
 .mmenu,
 .contact {
+  min-height: 100vh;
   padding: 7.5rem 8% 1.4rem;
+  position: relative;
 }
+
+/* .about::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  right: 0rem;
+  bottom: 0rem;
+  background: #3c2a21;
+} */
 
 .about h2,
 .mmenu h2,
@@ -167,33 +180,43 @@ body {
 
 .about .row {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about .row .about-img {
   margin-top: 3.5rem;
+  order: 1;
 }
 
 .about .row .about-img img {
-  border-radius: 45%;
-  width: 100%;
+  border-radius: 10%;
+  height: auto;
+  width: 25rem;
+  outline-style: solid;
+  outline-color: #d5cea3;
+  outline-width: thick;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
 }
 
 .about .row .content {
   flex: 1 1 35rem;
   padding: 3rem 1rem;
+  order: 2;
 }
 
 .about .row .content h3 {
   color: #3c2a21;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
 }
 
 .about .row .content p {
   color: #8f3200;
   margin-bottom: 0.8rem;
+  margin-left: 1rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.6rem;
@@ -321,7 +344,7 @@ footer .links a:hover {
 
 /* Media Quaries */
 /* Tablet */
-@media (max-width: 758px) {
+@media (max-width: 762px) {
   html {
     font-size: 62.5%;
   }
@@ -368,7 +391,6 @@ footer .links a:hover {
   .about .row .about-img img {
     max-width: 100%;
     height: auto;
-
     object-fit: cover;
     object-position: center;
   }
