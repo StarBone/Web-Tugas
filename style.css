@@ -11,6 +11,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffefd2;
+  background-image: url(hero.png);
+  background-repeat: repeat;
   color: aliceblue;
   /* min-height: 5000px; */
 }
@@ -84,8 +86,6 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(hero.png);
-  background-repeat: repeat;
   background-size: cover;
   position: relative;
 }
@@ -95,13 +95,9 @@ body {
   display: block;
   position: absolute;
   width: 100%;
-  height: 20%;
+  height: 10%;
   bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgb(28, 10, 0) 8%,
-    rgba(255, 255, 255, 0) 25%
-  );
+  background: #3c2a21;
 } */
 
 .hero .content {
@@ -149,21 +145,24 @@ body {
 .about,
 .mmenu,
 .contact {
-  padding: 7.5rem 7% 1.4rem;
+  padding: 7.5rem 8% 1.4rem;
 }
 
 .about h2,
 .mmenu h2,
 .contact h2 {
+  color: #3c2a21;
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 0rem;
+  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
 }
 
 .about h2 span,
 .mmenu h2 span,
 .contact h2 span {
   color: #d5cea3;
+  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
 }
 
 .about .row {
@@ -175,6 +174,7 @@ body {
 }
 
 .about .row .about-img img {
+  border-radius: 45%;
   width: 100%;
 }
 
@@ -184,15 +184,20 @@ body {
 }
 
 .about .row .content h3 {
+  color: #3c2a21;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  margin-top: 3rem;
+  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
 }
 
 .about .row .content p {
+  color: #8f3200;
   margin-bottom: 0.8rem;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.6rem;
+  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
 }
 
 /* Menu Section */
