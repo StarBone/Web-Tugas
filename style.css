@@ -128,11 +128,10 @@ body {
   line-height: 1.4;
   font-weight: 300;
   text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
-  mix-blend-mode: difference;
 }
 
 .hero .content .p-span p {
-  color: #652300;
+  color: #8f3200;
 }
 
 .hero .content .cta {
