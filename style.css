@@ -14,7 +14,7 @@ body {
   background-image: url(hero.png);
   background-repeat: repeat;
   color: aliceblue;
-  min-height: 5000px;
+  /* min-height: 5000px; */
 }
 
 /* Navbar */
@@ -146,20 +146,9 @@ body {
 .mmenu,
 .contact {
   min-height: 100vh;
-  padding: 7.5rem 8% 1.4rem;
+  padding: 7.5rem 0rem;
   position: relative;
 }
-
-/* .about::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 10%;
-  right: 0rem;
-  bottom: 0rem;
-  background: #3c2a21;
-} */
 
 .about h2,
 .mmenu h2,
@@ -194,15 +183,15 @@ body {
   height: auto;
   width: 30rem;
   outline-style: solid;
-  outline-color: #716e58;
+  outline-color: #d5cea3;
   outline-width: thick;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
 }
 
 .about .row .content {
-  flex: 1 1 35rem;
-  padding: 3rem 1rem;
-  order: 2;
+  flex: 1 1rem;
+  padding: 1rem 1rem;
+  order: 1;
 }
 
 .about .row .content h3 {
@@ -223,34 +212,34 @@ body {
   text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
 }
 
-/* Menu Section */
-.mmenu p {
-  text-align: center;
-  max-width: 30rem;
-  margin: auto;
-  font-weight: 100;
-  line-height: 1.6;
-}
-
-.mmenu .row {
+.about .row2 {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  width: 100%;
   justify-content: center;
+  background-color: #d5cea3;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  order: 2;
 }
 
-.mmenu .row .menu-card {
+.about .row2 .profile-card {
   text-align: center;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.mmenu .row .menu-card img {
-  border-radius: 40%;
+.about .row2 .profile-card .profile-card-img {
+  border-radius: 15%;
   width: 60%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.mmenu .row .menu-card .menu-card-title {
-  margin: 1.5rem auto 0.5rem;
+.about .row2 .profile-card .profile-card-nama {
+  color: #3c2a21;
+  margin: 1rem auto 0.5rem;
+  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
 }
 
 /* Contact Section */
