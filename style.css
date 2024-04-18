@@ -272,6 +272,21 @@ body {
   font-weight: 200;
 }
 
+.contact .kontak .phone {
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.contact .kontak .phone p {
+  margin-left: 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
 /* Footer */
 footer {
   background-color: #3c2a21;
