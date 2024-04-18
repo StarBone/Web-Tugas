@@ -243,7 +243,7 @@ body {
   display: flex;
   margin: 3rem auto;
   /* margin-top: 3rem; */
-  height: 40rem;
+  height: 35rem;
   background-color: #3c2a21;
   max-width: 765px;
   overflow: hidden;
@@ -257,13 +257,13 @@ body {
 
 .contact .row .layanan {
   flex: 1 1 45rem;
-  padding: 4rem 2rem;
-  margin-top: -4rem;
+  padding: 2rem 2rem;
 }
 
 .contact .row .layanan h3 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: #d5cea3;
+  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.5);
 }
 
 .contact .row .layanan p {
@@ -275,11 +275,47 @@ body {
 .contact .kontak .phone {
   display: flex;
   padding-top: 1rem;
+  margin-left: 0.5rem;
   align-items: center;
 }
 
 .contact .kontak .phone p {
   margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.contact .kontak .mail {
+  display: flex;
+  padding-top: 0rem;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.contact .kontak .mail p {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.contact .kontak .address {
+  display: flex;
+  padding-top: 0rem;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.contact .kontak .address p {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
   color: #fff;
   font-size: 0.9rem;
   font-style: normal;
