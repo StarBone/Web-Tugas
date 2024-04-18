@@ -1,0 +1,82 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffefd2;
+  background-image: url(hero.png);
+  background-repeat: repeat;
+  color: aliceblue;
+  /* min-height: 5000px; */
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7%;
+  background-color: rgba(26, 18, 11, 0.8);
+  border-bottom: 1px solid #3c2a21;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: oblique;
+  color: #ffffff;
+}
+
+.navbar .navbar-logo span {
+  color: #d5cea3;
+}
+
+.navbar .navbar-nav a {
+  color: #e5e5cb;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #d5cea3;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid #d5cea3;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #e5e5cb;
+  margin: 0 0.3rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #d5cea3;
+}
+
+#menu {
+  display: none;
+}
