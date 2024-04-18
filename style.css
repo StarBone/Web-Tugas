@@ -189,8 +189,7 @@ body {
 }
 
 .about .row .content {
-  flex: 1 1rem;
-  padding: 1rem 1rem;
+  padding: 1rem 10rem;
   order: 1;
 }
 
