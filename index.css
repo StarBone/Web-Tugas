@@ -81,6 +81,33 @@ body {
   display: none;
 }
 
+/* Navbar Search Form */
+.navbar .search-form {
+  position: absolute;
+  top: 101%;
+  right: 2%;
+  background-color: #fff;
+  width: 20rem;
+  height: 3.5rem;
+  display: flex;
+  text-align: center;
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #010101;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #3c2a21;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -242,7 +269,6 @@ body {
 .contact .row {
   display: flex;
   margin: 3rem auto;
-  /* margin-top: 3rem; */
   height: 35rem;
   background-color: #3c2a21;
   max-width: 765px;
@@ -380,7 +406,7 @@ footer .links a:hover {
 
   .navbar .navbar-nav.active {
     right: 0;
-    top: 58px;
+    top: 101%;
   }
 
   .navbar .navbar-nav a {
@@ -399,6 +425,11 @@ footer .links a:hover {
     transform: scaleX(0.2);
   }
 
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2.6rem;
+  }
+
   .about .row {
     flex-wrap: wrap;
   }
@@ -411,7 +442,6 @@ footer .links a:hover {
   }
 
   .about .row .content {
-    padding: 0.2rem;
     margin-top: 2rem;
   }
 
@@ -421,11 +451,6 @@ footer .links a:hover {
 
   .about .row .content p {
     font-size: 1.5rem;
-  }
-
-  .mmenu p,
-  .mmenu .menu-card-title {
-    font-size: 1.3rem;
   }
 
   .contact .row {
