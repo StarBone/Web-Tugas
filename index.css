@@ -91,6 +91,13 @@ body {
   height: 3.5rem;
   display: flex;
   text-align: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
 }
 
 .navbar .search-form input {
