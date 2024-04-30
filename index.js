@@ -9,8 +9,10 @@ document.querySelector("#menu").onclick = () => {
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");
 
-document.querySelector("#search-button").onclick = () => {
+document.querySelector("#search-button").onclick = (e) => {
   searchForm.classList.toggle("active");
+  searchBox.focus();
+  e.preventDefault();
 };
 
 const menu = document.querySelector("#menu");

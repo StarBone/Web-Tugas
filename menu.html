@@ -34,14 +34,33 @@
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
         <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Navbar Search Form Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="masukan kata ....." />
+        <label for="search-box"><i data-feather="search"></i></label>
       </div>
     </nav>
 
     <!-- Menu -->
-    <section class="menu"></section>
+    <section class="content">
+      <div class="container">
+        <div class="menu">
+          <div class="content-area">
+            <div class="main"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feather -->
+    <script>
+      feather.replace();
+    </script>
 
     <!-- JavaScript -->
     <script src="menu.js"></script>

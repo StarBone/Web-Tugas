@@ -80,3 +80,85 @@ body {
 #menu {
   display: none;
 }
+
+/* Navbar Search Form */
+.navbar .search-form {
+  position: absolute;
+  top: 101%;
+  right: 2%;
+  background-color: #fff;
+  width: 20rem;
+  height: 3.5rem;
+  display: flex;
+  text-align: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #010101;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #3c2a21;
+}
+
+/* Media Quaries */
+/* Tablet */
+@media (max-width: 762px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #e5e5cb;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+    top: 101%;
+  }
+
+  .navbar .navbar-nav a {
+    color: #3c2a21;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2.6rem;
+  }
+}
