@@ -13,7 +13,6 @@ body {
   background-color: #ffefd2;
   background-image: url(hero.png);
   background-repeat: repeat;
-  color: aliceblue;
   /* min-height: 5000px; */
 }
 
@@ -117,71 +116,92 @@ body {
 
 /* Menu Section */
 .menu {
-  min-height: 100vh;
-  position: relative;
-}
-
-.menu .container {
-  margin-top: 10rem;
-}
-
-.menu .container .primary {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
-.menu .container .primary .row1 {
-}
-
-.menu .container .primary .row1 h3 {
-  color: #010101;
-}
-
-.menu .container .primary .row2 {
-}
-
-.menu .colom {
-  margin: 0 0 1em;
-  padding: 0;
-}
-
-.menu .colom .produk {
-  background: #737373;
-  width: 50%;
-  height: 16rem;
-  border-radius: 5%;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-}
-
-.menu .colom .produk .produk-content {
+.menu .sidebar-container {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  border-style: dashed;
+  border-color: #d5cea3;
+  border-width: 1px;
+  margin-top: 120px;
+  margin-left: 100px;
 }
 
-.menu .colom .produk .produk-content img {
-  width: 100%;
-  border-radius: 5% 5% 0 0;
+.menu .sidebar-colom {
+  margin: 10px 5px;
 }
 
-.menu .colom .produk .produk-content h3 {
-  padding-left: 1.5rem;
+.menu .sidebar {
+  width: 200px;
+  margin: 5px 10px;
 }
 
-.menu .colom .produk .produk-content p {
-  padding-left: 1.5rem;
+.menu .sidebar-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 4.5px;
+  cursor: pointer;
+  transition: all 0.8s;
 }
 
-.menu .colom .produk .produk-content a {
+.menu .sidebar-content:hover {
+  background-color: rgb(255, 52, 52);
+}
+
+.menu .sidebar-content:hover .btn {
   color: #fff;
-  background-color: red;
-  margin-left: 1rem;
-  margin-top: 0.3rem;
-  width: 80%;
-  text-align: center;
+}
+
+.menu .sidebar .btn {
+  color: rgb(255, 52, 52);
+  padding: 5px;
+}
+
+.menu .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.menu .card-container .card {
+  max-width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 5px 5px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .card-content {
+  padding: 0px 10px 9px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.2);
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 3;
+}
+
+.card .btn {
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(255, 52, 52);
   text-decoration: none;
-  border-radius: 10%;
+  padding: 8px 36%;
+  border-radius: 6px;
 }
 
 /* Media Quaries */
