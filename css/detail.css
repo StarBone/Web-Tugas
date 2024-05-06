@@ -17,7 +17,6 @@ body {
 }
 
 /* Navbar */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -80,6 +79,63 @@ body {
   display: none;
 }
 
+/* Display Section */
+.display {
+  display: flex;
+}
+
+.detail .detail-container {
+  margin-top: 120px;
+  margin-left: 60px;
+}
+
+.detail .detail-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.detail .detail-card img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.detail .detail-content {
+  margin-left: 50px;
+}
+
+.detail .detail-row {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.detail .detail-row h3 {
+  padding: 25px 10px 5px;
+}
+
+.detail .detail-row p {
+  position: relative;
+  padding: 10px;
+}
+
+.detail .detail-row p::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 90%;
+  height: 1px;
+  background-color: #e5e5cb;
+}
+
+.detail .detail-row button {
+  background-color: rgb(255, 52, 52);
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
 /* Navbar Search Form */
 .navbar .search-form {
   position: absolute;
@@ -112,96 +168,6 @@ body {
   font-size: 2rem;
   margin-right: 1.5rem;
   color: #3c2a21;
-}
-
-/* Menu Section */
-.menu {
-  display: flex;
-}
-
-.menu .sidebar-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 120px;
-  margin-left: 100px;
-}
-
-.menu .sidebar-colom {
-  border-style: dashed;
-  border-color: #d5cea3;
-  border-width: 1px;
-  padding: 10px 5px;
-}
-
-.menu .sidebar {
-  width: 200px;
-  margin: 5px 10px;
-}
-
-.menu .sidebar-content {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 4.5px;
-  cursor: pointer;
-  transition: all 0.8s;
-}
-
-.menu .sidebar-content:hover {
-  background-color: rgb(255, 52, 52);
-}
-
-.menu .sidebar-content:hover .btn {
-  color: #fff;
-}
-
-.menu .sidebar .btn {
-  color: rgb(255, 52, 52);
-  padding: 5px;
-}
-
-.menu .card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  margin-left: 10px;
-}
-
-.menu .card-container .card {
-  max-width: 200px;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 5px 5px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card .card-content {
-  padding: 0px 10px 9px;
-}
-
-.card h3 {
-  font-size: 18px;
-  font-weight: 500;
-  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.2);
-}
-
-.card p {
-  font-size: 14px;
-  line-height: 3;
-}
-
-.card .btn {
-  display: inline-block;
-  color: #fff;
-  background-color: rgb(255, 52, 52);
-  text-decoration: none;
-  padding: 8px 36%;
-  border-radius: 6px;
 }
 
 /* Footer */
