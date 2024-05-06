@@ -11,7 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffefd2;
-  background-image: url(hero.png);
+  background-image: url(/image/hero.png);
   background-repeat: repeat;
   /* min-height: 5000px; */
 }
