@@ -122,15 +122,15 @@ body {
 .menu .sidebar-container {
   display: flex;
   flex-direction: column;
-  border-style: dashed;
-  border-color: #d5cea3;
-  border-width: 1px;
   margin-top: 120px;
   margin-left: 100px;
 }
 
 .menu .sidebar-colom {
-  margin: 10px 5px;
+  border-style: dashed;
+  border-color: #d5cea3;
+  border-width: 1px;
+  padding: 10px 5px;
 }
 
 .menu .sidebar {
