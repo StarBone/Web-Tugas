@@ -1,3 +1,9 @@
+:root {
+  --harga: rgb(0, 201, 201);
+  --shadowshape: box-shadow: 0 3px 6px 0 #d7d6dc;
+  --shadowtext: text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.1);
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -79,63 +85,6 @@ body {
   display: none;
 }
 
-/* Display Section */
-.display {
-  display: flex;
-}
-
-.detail .detail-container {
-  margin-top: 120px;
-  margin-left: 60px;
-}
-
-.detail .detail-card {
-  display: flex;
-  flex-direction: row;
-}
-
-.detail .detail-card img {
-  width: 500px;
-  border-radius: 10px;
-}
-
-.detail .detail-content {
-  margin-left: 50px;
-}
-
-.detail .detail-row {
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.detail .detail-row h3 {
-  padding: 25px 10px 5px;
-}
-
-.detail .detail-row p {
-  position: relative;
-  padding: 10px;
-}
-
-.detail .detail-row p::after {
-  content: "";
-  position: absolute;
-  left: 5%;
-  bottom: 0;
-  width: 90%;
-  height: 1px;
-  background-color: #e5e5cb;
-}
-
-.detail .detail-row button {
-  background-color: rgb(255, 52, 52);
-  color: #fff;
-  width: 100px;
-  height: 30px;
-  margin: 15px;
-  border-radius: 5px;
-}
-
 /* Navbar Search Form */
 .navbar .search-form {
   position: absolute;
@@ -168,6 +117,69 @@ body {
   font-size: 2rem;
   margin-right: 1.5rem;
   color: #3c2a21;
+}
+
+/* Display Section */
+.display {
+  display: flex;
+}
+
+.detail .detail-container {
+  margin-top: 120px;
+  margin-left: 60px;
+}
+
+.detail .detail-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.detail .detail-card img {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 #d7d6dc;
+}
+
+.detail .detail-content {
+  margin-left: 50px;
+}
+
+.detail .detail-row {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 90%;
+  box-shadow: 0 3px 6px 0 #d7d6dc;
+}
+
+.detail .detail-row h3 {
+  color: var(--harga);
+  font-weight: 500;
+  font-family: "inter";
+  padding: 25px 10px 5px;
+}
+
+.detail .detail-row p {
+  position: relative;
+  padding: 10px;
+}
+
+.detail .detail-row p::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 90%;
+  height: 1px;
+  background-color: #e5e5cb;
+}
+
+.detail .detail-row button {
+  background-color: rgb(255, 52, 52);
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  margin: 15px;
+  border-radius: 5px;
 }
 
 /* Footer */

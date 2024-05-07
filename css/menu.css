@@ -1,3 +1,9 @@
+:root {
+  --harga: rgb(0, 201, 201);
+  --shadowshape: box-shadow: 0 3px 6px 0 #d7d6dc;
+  --shadowtext: text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.1);
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -187,10 +193,12 @@ body {
 .card h3 {
   font-size: 18px;
   font-weight: 500;
-  text-shadow: 1px 1px 3px rgb(28, 10, 0, 0.2);
+  text-shadow: var(--shadowtext);
 }
 
 .card p {
+  color: var(--harga);
+  font-family: "inter";
   font-size: 14px;
   line-height: 3;
 }
